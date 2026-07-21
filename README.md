@@ -7,14 +7,14 @@
 
 ## 📌 Sobre o projeto
 
-O **CVDetect AI** é um sistema inteligente desenvolvido para auxiliar na **análise da deficiência de visão de cores**, conhecida popularmente como daltonismo.
+O **CVDetect AI** é um sistema inteligente que irá auxiliar na **análise da deficiência de visão de cores**, conhecida popularmente como daltonismo.
 
 O nome do projeto é baseado em:
 
 - **CVD** (*Color Vision Deficiency*) → termo técnico utilizado para representar a deficiência de visão de cores;
 - **Detect** → representa o objetivo do sistema de identificar possíveis padrões relacionados à percepção visual das cores.
 
-A aplicação combina conceitos de **Inteligência Artificial, automação, processamento de imagens e acessibilidade**, buscando transformar o processo tradicional de avaliação da percepção cromática em uma experiência mais interativa, automatizada e personalizada.
+A aplicação combinará conceitos de **Inteligência Artificial, automação, processamento de imagens e acessibilidade**, buscando transformar o processo tradicional de avaliação da percepção cromática em uma experiência mais interativa, automatizada e personalizada.
 
 ---
 
@@ -28,27 +28,38 @@ O projeto original pode ser acessado em:
 
 🔗 [PF-TesteDaltonismo — Projeto Final POO](https://github.com/becardo/PF-TesteDaltonismo)
 
-Nesta nova versão, o projeto está sendo remodelado individualmente com foco na integração de **Inteligência Artificial, melhoria da arquitetura do sistema e desenvolvimento de novas funcionalidades inteligentes**.
+Nesta nova versão, o projeto está sendo remodelado com foco na integração de **Inteligência Artificial, melhoria da arquitetura do sistema e desenvolvimento de novas funcionalidades inteligentes**.
 
 ---
 
 # 🧠 Motivação
 
-A deficiência de visão de cores (CVD) é uma alteração visual que afeta a capacidade de diferenciar determinadas cores, principalmente combinações envolvendo:
+A deficiência na visão de cores (Color Vision Deficiency – CVD), popularmente conhecida como daltonismo, é uma alteração visual que compromete a capacidade de distinguir determinadas cores, principalmente combinações envolvendo:
 
-- Vermelho e verde;
-- Azul e amarelo;
-- Diferentes intensidades e tonalidades.
+- vermelho e verde;
+- azul e amarelo;
+- diferentes tonalidades e intensidades de uma mesma cor.
 
-Um dos métodos mais conhecidos para avaliação da percepção cromática é o **Teste de Ishihara**, que utiliza imagens compostas por pontos coloridos contendo números ou padrões que devem ser identificados pelo usuário.
+Um dos métodos mais conhecidos para avaliação da percepção cromática é o Teste de Ishihara, composto por lâminas pseudoisocromáticas formadas por pontos coloridos que ocultam números ou padrões. Esse teste é amplamente utilizado para a triagem de alterações do eixo vermelho-verde, sendo eficaz principalmente na detecção de Protanopia, Protanomalia, Deuteranopia e Deuteranomalia.
 
-Apesar de ser uma ferramenta amplamente utilizada, a tecnologia pode contribuir para tornar esse processo:
+Entretanto, o Teste de Ishihara apresenta algumas limitações. Além de possuir baixa sensibilidade para alterações do eixo azul-amarelo (Tritanopia e Tritanomalia), ele não permite quantificar com precisão a severidade da deficiência na visão de cores.
 
-- Mais acessível;
-- Automatizado;
-- Interativo;
-- Didático;
-- Personalizado.
+Para avaliações mais detalhadas, são utilizados testes como o Farnsworth D-15 e o Farnsworth-Munsell 100 Hue Test. O primeiro auxilia na identificação do tipo de deficiência cromática, enquanto o segundo possibilita uma análise quantitativa da percepção de cores, estimando a gravidade da alteração e o eixo cromático afetado. Ambos consistem na ordenação de discos coloridos pelo paciente, permitindo identificar padrões característicos de erro.
+
+Embora esses testes sejam amplamente consolidados na prática clínica, eles utilizam um conjunto fixo de estímulos visuais. Em avaliações repetidas, essa característica pode favorecer a familiaridade do paciente com o exame e a memorização das respostas, reduzindo seu poder discriminativo e comprometendo a confiabilidade dos resultados.
+
+Entre as soluções digitais atualmente disponíveis, destaca-se o Cambridge Colour Test, um exame computadorizado capaz de adaptar automaticamente a dificuldade das tarefas e estimar limiares de discriminação cromática com elevada precisão.
+
+Diante desse cenário, este projeto propõe o desenvolvimento de uma plataforma inteligente para triagem da deficiência na visão de cores, utilizando Inteligência Artificial para tornar o processo mais adaptativo, personalizado e acessível. Inspirado nos princípios do Cambridge Colour Test, o sistema busca oferecer uma solução:
+
+- mais acessível;
+- automatizada;
+- adaptativa;
+personalizada;
+interativa;
+didática.
+
+Diferentemente dos testes tradicionais, a proposta não consiste apenas em digitalizar exames existentes, mas em utilizar Inteligência Artificial para selecionar e gerar dinamicamente estímulos visuais de acordo com o desempenho do paciente ao longo da avaliação. Dessa forma, busca-se reduzir os efeitos da repetição de testes, aumentar a capacidade de diferenciação entre os diferentes tipos de deficiência na visão de cores e fornecer um prognóstico probabilístico que auxilie o profissional de saúde na tomada de decisão.
 
 ---
 
@@ -90,11 +101,11 @@ Usuário
    |
    v
 Teste de percepção visual
-   |
-   v
-Coleta de respostas
-   |
-   v
+   |                  ^
+   v                  |
+Coleta de respostas   |
+   |                  |
+   v                  |
 Processamento inteligente
    |
    v
@@ -108,41 +119,41 @@ Relatório personalizado
 
 # 🤖 Inteligência Artificial aplicada
 
-A Inteligência Artificial será integrada ao sistema como uma camada de apoio para aprimorar a análise dos resultados.
+A Inteligência Artificial será integrada ao sistema como um mecanismo de apoio à realização do teste, tornando a avaliação mais dinâmica, personalizada e adaptativa.
 
-Possíveis aplicações:
+Entre suas principais aplicações estão:
 
-- Interpretação inteligente das respostas;
-- Identificação de padrões de percepção visual;
-- Geração automática de relatórios;
-- Explicações personalizadas sobre os resultados;
-- Assistência durante a realização do teste.
+- Seleção inteligente dos próximos estímulos visuais com base no desempenho do paciente;
+- Adaptação automática da dificuldade do teste ao longo da avaliação;
+- Identificação de padrões de resposta compatíveis com diferentes tipos de deficiência na visão de cores;
+- Estimativa probabilística do tipo e da severidade da alteração cromática;
+- Geração automática de relatórios e explicações sobre os resultados obtidos.
 
-A IA possui papel de **apoio à análise**, não substituindo uma avaliação médica realizada por profissionais especializados, sendo então este projeto caracterizado como *prognóstico*.
+A IA não possui o objetivo de substituir os métodos clínicos tradicionais nem o diagnóstico realizado por profissionais especializados. Seu papel é auxiliar o processo de triagem, fornecendo um prognóstico baseado na análise das respostas do paciente e contribuindo para uma avaliação mais eficiente e personalizada.
 
 ---
 
 # ⚙️ Funcionalidades
 
-## Implementadas na versão original
+🚧 Avaliação adaptativa com apoio de Inteligência Artificial
+🚧 Estimativa probabilística do tipo e da severidade da deficiência na visão de cores
+🚧 Seleção dinâmica dos estímulos visuais durante o teste
+🚧 Geração automática de relatórios personalizados
+🚧 Histórico de avaliações realizadas
+🚧 Interface gráfica modernizada e mais acessível
+🚧 Explicações didáticas sobre os resultados obtidos
+🚧 Arquitetura refatorada para maior escalabilidade e manutenção
 
-✅ Simulação do Teste de Ishihara  
-✅ Interface gráfica utilizando Tkinter  
-✅ Registro das respostas do usuário  
-✅ Análise automática dos resultados  
-✅ Classificação de possíveis alterações na percepção de cores  
+## 🚀 Roadmap
 
----
-
-## Em desenvolvimento
-
-🚧 Integração com Inteligência Artificial  
-🚧 Remodelagem da arquitetura do sistema  
-🚧 Melhorias na interface gráfica  
-🚧 Geração automática de relatórios personalizados  
-🚧 Histórico de testes realizados  
-🚧 Maior acessibilidade da aplicação  
-🚧 Análise inteligente dos resultados  
+- [ ] Refatoração da arquitetura do sistema
+- [ ] Nova interface gráfica
+- [ ] Banco de dados para histórico de avaliações
+- [ ] Geração automática de relatórios
+- [ ] Módulo de IA para análise das respostas
+- [ ] Sistema adaptativo de seleção de estímulos
+- [ ] Estimativa probabilística do diagnóstico
+- [ ] Validação do modelo utilizando dados experimentais
 
 ---
 
@@ -163,12 +174,6 @@ A IA possui papel de **apoio à análise**, não substituindo uma avaliação m�
 - Automação;
 - Processamento de imagens;
 - Desenvolvimento de soluções acessíveis.
-
-## Tecnologias planejadas
-
-- Bibliotecas de processamento de imagens;
-- Ferramentas de geração de relatórios;
-- Integração com modelos de IA.
 
 ---
 
